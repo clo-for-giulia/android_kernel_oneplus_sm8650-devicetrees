@@ -45,6 +45,13 @@ OPLUS_PINEAPPLE_BOARDS += \
                           bale-23622-cliffs-overlay.dtbo\
                           bale-23718-cliffs-overlay.dtbo\
                           bale-24687-cliffs-overlay.dtbo
+else
+# caihong-clo only builds the Pad 2; its overlays are the default.
+OPLUS_PINEAPPLE_BOARDS += \
+                          caihong-23926-pineapple-overlay.dtbo\
+                          caihong-23976-pineapple-overlay.dtbo\
+                          caihong-23926-pineapple-overlay-T0.dtbo\
+                          caihong-23976-pineapple-overlay-T0.dtbo
 endif
 
 dtb-y += $(OPLUS_PINEAPPLE_BOARDS) $(PINEAPPLE_BASE_DTB) $(PINEAPPLE_APQ_BASE_DTB)

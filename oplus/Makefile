@@ -1,3 +1,6 @@
+CONFIG_GIULIA_DTB ?= y
+CONFIG_GIULIAC_DTB ?= y
+
 PINEAPPLE_BASE_DTB += ../qcom/pineapple.dtb ../qcom/pineapple-v2.dtb ../qcom/cliffs.dtb ../qcom/cliffs7.dtb
 PINEAPPLE_APQ_BASE_DTB += ../qcom/pineapplep.dtb ../qcom/pineapplep-v2.dtb
 
@@ -46,12 +49,13 @@ OPLUS_PINEAPPLE_BOARDS += \
                           bale-23718-cliffs-overlay.dtbo\
                           bale-24687-cliffs-overlay.dtbo
 else
-# caihong-clo only builds the Pad 2; its overlays are the default.
+# Default to giulia / giuliac overlays
 OPLUS_PINEAPPLE_BOARDS += \
-                          caihong-23926-pineapple-overlay.dtbo\
-                          caihong-23976-pineapple-overlay.dtbo\
-                          caihong-23926-pineapple-overlay-T0.dtbo\
-                          caihong-23976-pineapple-overlay-T0.dtbo
+                          giulia-23851-pineapple-overlay-T0.dtbo\
+                          giulia-23851-pineapple-overlay.dtbo\
+                          giulia-23867-pineapple-overlay-T0.dtbo\
+                          giulia-23867-pineapple-overlay-T0-EU.dtbo\
+                          giulia-23867-pineapple-overlay.dtbo
 endif
 
 dtb-y += $(OPLUS_PINEAPPLE_BOARDS) $(PINEAPPLE_BASE_DTB) $(PINEAPPLE_APQ_BASE_DTB)

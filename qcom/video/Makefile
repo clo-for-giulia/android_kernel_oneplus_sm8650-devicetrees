@@ -2,7 +2,7 @@
 # vendor/qcom/proprietary/video-devicetree for prepare_vendor.sh.
 KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
 # Select the Pad 2 overlays, as the make based kernel build did.
-KBUILD_OPTIONS += CONFIG_OPLUS_DEVICE_DTBS=y CONFIG_CAIHONG_DTB=y
+KBUILD_OPTIONS += CONFIG_OPLUS_DEVICE_DTBS=y CONFIG_GIULIA_DTB=y CONFIG_GIULIAC_DTB=y
 
 all: dtbs
 

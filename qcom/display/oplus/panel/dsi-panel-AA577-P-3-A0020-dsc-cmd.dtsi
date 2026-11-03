@@ -5390,7 +5390,7 @@
 	oplus,vreg_ctrl_flag;
 
 	/* ofp config */
-	oplus,ofp-fp-type = <0x90>;
+	oplus,ofp-fp-type = <0x490>;
 	oplus,ofp-longrui-aod-config = <0x06>;
 	oplus,ofp-need-to-wait-data-before-aod-on;
 	oplus,ofp-aod-off-frame-cost = <1>;
